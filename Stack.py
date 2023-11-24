@@ -1,0 +1,11 @@
+from queue import LifoQueue
+q = LifoQueue()
+q.put(1)
+q.put(2)
+q.put(3)
+q.put(4)
+print(q.get())
+print(q.empty())
+print(q.qsize())
+q.queue.clear()
+print(q.empty())
