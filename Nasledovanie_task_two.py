@@ -1,7 +1,14 @@
 class Robot():
+    """
+    Args:
+        model(str) = модель
+    Attributes:
+        __str__: вывод
+    """
     def __init__(self,model) -> None:
         self.model = model
     def __str__(self) -> str:
+   
         return "Моя модель {} ".format(self.model)
 
 class Robot_pilisos(Robot):
@@ -30,3 +37,4 @@ rob_two = Military_Robot(2700,"laser")
 rob_two.operate()
 rob_three = under_water_robot(3700,"pulemet",30)
 rob_three.operate()
+print(Robot.__doc__)
